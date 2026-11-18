@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+run.log
+# full-frame masks written by every run (recreate with run_example.sh)
+*_annulus_masks.fits
+*_mask_*.fits

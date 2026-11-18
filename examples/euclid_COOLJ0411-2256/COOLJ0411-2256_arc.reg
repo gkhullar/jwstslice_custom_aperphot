@@ -1,0 +1,11 @@
+# Region file format: DS9 version 4.1
+# Example regions for custom_aperture_photometry.py on the Euclid DR1 cutout of COOLJ0411-2256.
+# Pixel coordinates refer to cool_lamps/euclid_cutouts/COOLJ0411-2256_euclid_dr1.fits (2400x2400, 0.1"/pix).
+# arc     : the giant arc NE of the central galaxies (polygon traced along the VIS ridge, ~0.7" wide)
+# bck_arc : local background for 'arc' (annulus = bck_arc minus arc)
+# rms     : empty sky used for the per-pixel noise
+global color=green font="helvetica 10 normal" select=1 edit=1 move=1 delete=1 include=1 source=1
+fk5
+polygon(62.7831694,-22.9424163,62.7829496,-22.9425610,62.7828331,-22.9426474,62.7827152,-22.9427727,62.7825935,-22.9428853,62.7824854,-22.9430317,62.7824035,-22.9432093,62.7823337,-22.9434353,62.7825369,-22.9434883,62.7826026,-22.9432740,62.7826714,-22.9431238,62.7827564,-22.9430091,62.7828700,-22.9429050,62.7829813,-22.9427858,62.7830760,-22.9427167,62.7832921,-22.9425746) # color=red text={arc}
+polygon(62.7831887,-22.9422500,62.7828683,-22.9424608,62.7827377,-22.9425584,62.7826157,-22.9426877,62.7824889,-22.9428057,62.7823659,-22.9429725,62.7822755,-22.9431677,62.7821702,-22.9435081,62.7826346,-22.9436292,62.7827306,-22.9433156,62.7827910,-22.9431830,62.7828610,-22.9430887,62.7829695,-22.9429900,62.7830767,-22.9428748,62.7831572,-22.9428169,62.7834692,-22.9426117) # color=green text={bck_arc}
+circle(62.7811306,-22.9448611,1.5") # color=yellow text={rms}
